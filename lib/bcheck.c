@@ -56,7 +56,8 @@
  || defined(__OpenBSD__) \
  || defined(__NetBSD__) \
  || defined(__dietlibc__) \
- || defined(_WIN32)
+ || defined(_WIN32) \
+ || defined(__linux__)
 //#warning Bound checking does not support malloc (etc.) in this environment.
 #undef CONFIG_TCC_MALLOC_HOOKS
 #undef HAVE_MEMALIGN
